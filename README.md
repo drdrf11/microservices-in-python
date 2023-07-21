@@ -14,6 +14,11 @@ Microservices in Python
 - $git add *, commit, push again
 - created devops.yml file (go to Actions menu on github repo, follow "setup a workflow for yourself", add his content)
   (beware of version "numbers" -- use quotes '3.10' != 3.10 == 3.1)
-
+- fleshed out make "lint" clause (pylint --disable=R,C *.py mylib/*.py) [I have already also fleshed out the format and test clauses]
+  and tested it
+- uncommented the "make lint" clause in devops.yml
+- committed changes
 1. Create a Python Virtual Environment 'python3 -m venv ~/.venv' or 'virtualenv ~/.venv'
-2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/, mylib/__init__.py, mylib/logic.py, main.py
+2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/, mylib/__init__.py, mylib/logic.py
+3. Populate 'Makefile'
+4. Set up Continuous Integration - check code for issues like lint errors
