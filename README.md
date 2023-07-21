@@ -12,7 +12,8 @@ Microservices in Python
 - fleshed out Makefile install clause (pip install --upgrade pip && pip install -r requirements.txt),
   tested same, ran $pip freeze | less, added version numbers to required packages requirements, tested
 - $git add *, commit, push again
-- created devops.yml file
+- created devops.yml file (go to Actions menu on github repo, follow "setup a workflow for yourself", add his content)
+  (beware of version "numbers" -- use quotes '3.10' != 3.10 == 3.1)
 
 1. Create a Python Virtual Environment 'python3 -m venv ~/.venv' or 'virtualenv ~/.venv'
 2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/, mylib/__init__.py, mylib/logic.py, main.py
