@@ -17,7 +17,10 @@ Microservices in Python
 - fleshed out make "lint" clause (pylint --disable=R,C *.py mylib/*.py) [I have already also fleshed out the format and test clauses]
   and tested it
 - uncommented the "make lint" clause in devops.yml
-- committed changes
+- committed changes (git: add .github/, add *, commit, pull, push) - devops is automatically run (but commit? pull? push?)
+- added 'build' (#build container) step to Makefile, started to create test file (test_logic.py)
+- mod 'test' make step to ref a test file, and to check coverage
+
 1. Create a Python Virtual Environment 'python3 -m venv ~/.venv' or 'virtualenv ~/.venv'
 2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/, mylib/__init__.py, mylib/logic.py
 3. Populate 'Makefile'
