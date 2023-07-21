@@ -20,6 +20,7 @@ Microservices in Python
 - committed changes (git: add .github/, add *, commit, pull, push) - devops is automatically run (but commit? pull? push?)
 - added 'build' (#build container) step to Makefile, started to create test file (test_logic.py)
 - mod 'test' make step to ref a test file, and to check coverage
+- add 'cli-fire.py' to generate doc file for wiki()
 
 1. Create a Python Virtual Environment 'python3 -m venv ~/.venv' or 'virtualenv ~/.venv'
 2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/, mylib/__init__.py, mylib/logic.py
