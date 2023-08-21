@@ -1,3 +1,5 @@
+image_name := deploy-fastapi
+
 install:
 	#install commands
 	pip install --upgrade pip &&\
@@ -14,10 +16,11 @@ test:
 	python -m pytest -vv --cov=mylib test_*.py
 build:
 	#build container
-	docker build -t deploy-fastapi .
+	docker build -t ${image_name} .
 run:
 	#run docker
-	docker run -p 127.0.0.1:8080:8080 1f759f3427e7
+	#echo Running ${image_name}:latest
+	docker run -p 127.0.0.1:8080:8080 ${image_name}:latest 
 deploy:
 	#deploy
 all: install lint test deploy
