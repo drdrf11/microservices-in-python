@@ -1,3 +1,5 @@
+"""Application to provide wikipedia information"""
+
 from fastapi import FastAPI
 import uvicorn
 from mylib.logic import search_wiki
@@ -9,7 +11,9 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Wikipedia API.  Call /search or /wiki"}
+    """Root for application. User /search or /wiki or /phrase instead"""
+
+    return {"message": "Wikipedia API.  Call /search or /wiki or /phrase"}
 
 
 @app.get("/search/{value}")
